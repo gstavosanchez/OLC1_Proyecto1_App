@@ -1,0 +1,29 @@
+:root {
+    --primario: #e23939;
+    --gris-claro: #b8b8b8;
+    --sombra: 0 0 13px 0 rgba(185, 185, 185, 0.25);
+}
+.contenedor-graph {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    width: 95%;
+    height: 450px;
+    color: var(--gris-claro);
+    box-shadow: var(--sombra);
+    transition: 0.3s ease all;
+    overflow: hidden;
+}
+.contenedor-graph:hover {
+    color: #858585f1;
+}
+.graph-graph {
+    height: 100%;
+    width: 100%;
+    /* margin: 0px auto; */
+    margin-left: 50px;
+}
+.contenedor-graph-head {
+    text-align: center;
+}
