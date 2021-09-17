@@ -6,7 +6,7 @@ import './graph.css';
 export const Graph = () => {
     const { parse } = useContext(ParseContext);
     const { grafo } = parse;
-    console.log(grafo);
+    // console.log(grafo);
     return (
         <div className="animate__animated animate__fadeIn">
             <div className="contenedor-graph">

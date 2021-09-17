@@ -1,11 +1,15 @@
+:root {
+    --primario: #008cba;
+    --gris-claro: #b8b8b8;
+    --sombra: 0 0 13px 0 rgba(185, 185, 185, 0.15);
+    --sombraCard: 0 0 13px 0 rgba(185, 185, 185, 0.45);
+}
 .contenedor-reporte {
+    margin-top: 100px;
     display: flex;
-    flex-flow: column wrap;
-    /* border: 2px solid black; */
+    flex-flow: row wrap;
     width: 95%;
-    height: 800px;
-    margin-left: 20px;
-    overflow: hidden;
+    justify-content: center;
 }
 .erores-reporte {
     width: 100%;
@@ -20,4 +24,38 @@
 }
 .table-wrapper-scroll-y {
     display: block;
+}
+
+.card-report {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: 20px;
+    font-weight: 700;
+    color: var(--gris-claro);
+    border: 2px solid transparent;
+    transition: 0.3s ease all;
+    box-shadow: var(--sombra);
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    text-decoration: none;
+}
+.card-report path {
+    fill: var(--gris-claro);
+    transition: 0.3s all all;
+}
+.card-report:hover {
+    box-shadow: var(--sombraCard);
+    border: 2px solid var(--primario);
+    color: black;
+}
+
+.card-report:hover path {
+    fill: var(--primario);
+}
+.card-report svg {
+    width: 64px;
+    margin-bottom: 10px;
 }
