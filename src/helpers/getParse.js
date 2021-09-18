@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = 'http://localhost:5000';
+const API = 'https://app-olc2-jolc.herokuapp.com';
 
 export const executeInterprete = async (code) => {
     const newData = {
